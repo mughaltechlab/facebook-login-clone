@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+  }
+  body{
+    overflow: scroll;
+    overflow-x: hidden;
+  }
+  header{
+    width: 100vw;
+    height: 55px;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    padding-inline: 16px;
+    padding-right: 32px;
+    position: relative;
+    box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, .2);
+  }
+  /* mobile view forget link page */
+  .mob-view{
+    display: none;
+    padding: 10px 16px;
+    padding-right: 18px;
+  }
+  .mob-page .heading{
+    font-weight: bold;
+  }
+  .mob-page input{
+    width: 100%;
+    padding: 9px;
+    border-radius: 5px;
+    box-shadow: inset -1px 1px 1px 0 rgba(0, 0, 0, 0.2);
+    background: #f5f6f7;
+    border: none;
+    margin: 10px 0;
+    font-size: 17px;
+  }
+  .mob-page .button a{
+    width: 100%;
+  }
+  .mob-page .button{
+    display: flex;
+    gap: 5px;
+    margin-bottom: 10px;
+  }
+  .mob-page .cancel-btn, .mob-page .search-btn{
+    margin: 0;
+  }
+  .mob-page .cancel-btn{
+    border: 0.5px solid #3470bd;
+    color: #1877f2;
+    background: #fff;
+    box-shadow: none;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 3px;
+  }
+  .mob-page .search-btn{
+    border: 1px solid #1877f2;
+    color: #fff;
+    background: #1877f2;
+    box-shadow: none;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 3px;
+  }
+  .mob-page .link {text-align: center;}
+  .mob-page .link a{
+    text-decoration: none;
+    color: #1877f2;
+    font-size: 14px;
+  }
+
+  /* ---------- */
+  .header-form .inp{
+    font-size: 15px;
+    border-radius: 6px;
+    outline: none;
+    padding: 10px 0 10px 16px;
+    border-radius: 6px;
+    border: 1px solid #CCD0D5;
+
+  }
+  .logo .fb_logo{
+    width: 150px;
+    margin-left: -10px;
+  }
+  .header-form a {
+    color: #1877f2;
+  font-size: 15px;
+  text-decoration: none;
+  }
+  .header-form a:hover {
+    text-decoration: underline;
+  }
+  .main{
+    width: 100vw;
+    height: 436px;
+    background: #E9EBEE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .form-wrapper{
+    width: 500px;
+    background: #fff;
+    border-radius: 8px;
+  }
+  .form-wrapper .heading{
+    margin: 22px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #162643;
+  }
+  .form-wrapper .form-div{
+    border-top: 1px solid #E5E5E5;
+    border-bottom: 1px solid #E5E5E5;
+    font-size: 17px;
+    padding: 20px 22px;
+  }
+  .form-div .desc{
+    /* padding: 20px 6px; */
+    margin-inline: auto;
+  }
+  .form-div input[type="text"]{
+    width: 100%;
+    margin-top: 20px;
+    font-size: 17px;
+    padding: 16px 0 16px 16px;
+    border-radius: 6px;
+    border: 1px solid #CCD0D5;
+
+  }
+  .form-btn{
+    float: right;
+    padding: 16px 14px;
+}
+.form-btn input, .login-btn{
+    font-weight: 700;
+    font-size: 15px;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+  }
+/* -----BUTTONS--------- */
+  .login-btn{padding:10px 9px}
+  #cancel-btn{
+    background: #E4E6EB;
+    color: #4B4F56;
+    cursor: pointer;
+  }
+  #search-btn, .login-btn{
+    color: #fff;
+    background: #1877f2;
+    cursor: pointer;
+    transition: background-color 200ms ease-in-out;
+  }
+  #search-btn:hover, .login-btn:hover{
+    background: #166fe5;
+  }
+  .gap-footer{
+    height:  160px;
+  }
+  /* ----- footer ----*/
+footer {
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  font-size: 11px;
+  color: #737373;
+  max-width: 940px;
+  margin-inline: auto;
+}
+footer .lang {
+  border-bottom: 1px solid #dddfe2;
+  margin-bottom: 8px;
+  padding-bottom: 8px;
+}
+footer a {
+  text-decoration: none;
+  font-size: 12px;
+  color: #8a8d91;
+  margin: 6px 0;
+  margin-right: 20px;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+footer .copyright_year {
+  margin-top: 20px;
+}
+
+/* media queries for responsive design */
+@media (max-width: 768px) {
+  footer{
+    width: 50%;
+  }
+  .inp, .inp-link{
+    display: none;
+  }
+}
+@media (max-width: 425.98px) {
+  .mob-view{
+    display: block;
+  }
+  footer{
+    display: none;
+  }
+  header{
+    justify-content: center;
+    height: 50px;
+    box-shadow: none;
+    border-bottom: 1px solid #E4E6EB;
+  }
+  .main{
+    display: none;
+  }
+  .login-btn{
+    display: none;
+  }
+  .logo .fb_logo {
+    width: 120px;}
+}
