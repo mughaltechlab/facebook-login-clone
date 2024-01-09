@@ -599,5 +599,10 @@ footer .copyright_year {
     font-size: 13px;
   }
 }
-@media (max-width: 425px) {
+@media (max-width: 329.98px) {
+  .mob-view .form-create-btn{
+    width: 296px;
+    width: 100%;
+    font-size: 14px;
+  }
 }
